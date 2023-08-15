@@ -4,35 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./js/login.js"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
 </head>
 <body>
     <header>
         <h1 class="text-5xl text-center mt-6">
-            Welcome <span class="font-semibold text-violet-600">Baap Er Bank</span>
+            Welcome <span class="font-semibold text-violet-600">Baap Er Bank</span></h1>
     </header>
     <main>
         <section class="bg-purple-100 w-9/12 mx-auto mt-12 p-8 rounded-lg">
             <h3 class="text-3xl font-medium mb-4">Please Login</h3>
             <div class="">
-                <input class="block w-9/12 mb-2 px-3 py-2 rounded-lg" type="email" name="" id="" placeholder="Your Email Address">
-                <input class="block w-9/12 mb-2 px-3 py-2 rounded-lg" type="password" name="" id="" placeholder="Your Password">
+                <input class="block w-9/12 mb-2 px-3 py-2 rounded-lg" type="email" name="" id="user-email" placeholder="Your Email Address">
+                <input class="block w-9/12 mb-2 px-3 py-2 rounded-lg" type="password" name="" id="user-password" placeholder="Your Password">
                 <button id="submit-btn" class="bg-amber-300 px-8 py-2 text-white font-medium rounded-lg mt-2 hover:bg-emerald-500">Submit</button>
             </div>
         </section>
-
     </main>
-  </h1>
+  <script src="./js/login.js"></script>
 </body>
 </html>
