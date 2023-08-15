@@ -8,8 +8,10 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   console.log(password);
 
   if (email === "admin" && password === "123456") {
-    console.log("!!!Valid User!!!");
+    // console.log("!!!Valid User!!!");
+    window.location.href = "bank.html";
   } else {
-    console.log("Invalid User. Try admin & 123456");
+    // console.log("Invalid User. Try admin & 123456");
+    alert("Invalid User. Try admin & 123456");
   }
 });
