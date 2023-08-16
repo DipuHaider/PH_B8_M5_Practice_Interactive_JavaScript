@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
+  <title>Functional Baap Er Bank</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -12,15 +12,44 @@
             Functional <span class="font-semibold text-violet-600">Baap Er Bank</span></h1>
     </header>
     <main>
-        <section class="bg-purple-100 w-9/12 mx-auto mt-12 p-8 rounded-lg">
-            <h3 class="text-3xl font-medium mb-4">Please Login</h3>
-            <div class="">
-                <input class="block w-9/12 mb-2 px-3 py-2 rounded-lg" type="email" name="" id="user-email" placeholder="Your Email Address">
-                <input class="block w-9/12 mb-2 px-3 py-2 rounded-lg" type="password" name="" id="user-password" placeholder="Your Password">
-                <button id="submit-btn" class="bg-amber-300 px-8 py-2 text-white font-medium rounded-lg mt-2 hover:bg-emerald-500">Submit</button>
+        <!-- balance Summery -->
+        <section class="w-9/12 mx-auto mt-12 p-8 rounded-lg">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-green-400 p-8 rounded-lg">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit-total" >00</span></h2>
+                </div>
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="withdraw-total" >00</span></h2>
+                </div>
+                <div class="bg-violet-400 p-8 rounded-lg">
+                    <h4 class="text-2xl">Balance</h4>
+                    <!-- <h2 class="text-5xl">$1200</h2> -->
+                    <h2 class="text-5xl">$<span id="balance-total" >1200</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- deposit & withdraw section -->
+        <section class="w-9/12 mx-auto mt-12 p-8 rounded-lg">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-teal-400 p-8 rounded-lg">
+                    <h4 class="text-2xl mb-4 text-white">Please Deposit</h4>
+                    <input class="block w-9/12 mb-2 px-3 py-2 rounded-lg" type="text" name="" id="deposit-field" placeholder="Deposit amount">
+                    
+                    <button id="deposit-btn" class="bg-green-500 px-8 py-2 text-white font-medium rounded-lg mt-2 hover:bg-green-400">Deposit</button>
+                </div>
+                <div class="bg-rose-400 p-8 rounded-lg">
+                    <h4 class="text-2xl mb-4 text-white">Please Withdraw</h4>
+                    <input class="block w-9/12 mb-2 px-3 py-2 rounded-lg" type="text" name="" id="withdraw-field" placeholder="Withdraw amount">
+                    
+                    <button id="withdraw-btn" class="bg-red-500 px-8 py-2 text-white font-medium rounded-lg mt-2 hover:bg-red-400">Withdraw</button>
+                </div>
             </div>
         </section>
     </main>
-  <script src="./js/login.js"></script>
+  <script src="./js/deposit.js"></script>
+  <script src="./js/withdraw.js"></script>
 </body>
 </html>

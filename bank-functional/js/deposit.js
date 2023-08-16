@@ -1,5 +1,5 @@
 /*
-1. add event listener to the deposit button
+1. add event listener/handler to the deposit button
 2. get deposit amount from the deposit input field
 2.5. convert string deposit amount ro a number type
 3. clear the deposit input field after getting the value
